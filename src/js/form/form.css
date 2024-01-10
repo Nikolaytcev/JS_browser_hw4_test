@@ -1,0 +1,67 @@
+.card-number-validate {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    border-radius: 10px;
+}
+
+.control {
+    height: 30px;
+}
+
+.card-number-input {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-number-validate {
+    height: 100%;
+}
+
+.card-images {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    }
+
+.card-image {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.card-image.uncolor::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+
+.card-image.visa {
+    background-image: url('../../img/visa.png');
+}
+
+.card-image.unionpay {
+    background-image: url('../../img/unionpay.png');
+}
+
+.card-image.mir {
+    background-image: url('../../img/mir.png');
+}
+
+.card-image.mastercard {
+    background-image: url('../../img/mastercard.png');
+}
+
+.card-image.americanexpress {
+    background-image: url('../../img/american-express.png');
+}

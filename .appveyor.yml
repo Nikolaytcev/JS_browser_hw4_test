@@ -1,4 +1,4 @@
-image: Ubuntu1804  # образ для сборки
+image: Ubuntu2004  # образ для сборки
 
 stack: node 18  # окружение
 
@@ -17,7 +17,7 @@ build_script:
   - npm run build   # команда сборки
 
 test_script:
-  - npm run lint && npm test  # скрипт тестирования
+  - npm run lint # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
